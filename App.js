@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {StyleSheet, View} from 'react-native';
 import PlaceInput from "./scr/components/inputCityForm";
 import ShowList from "./scr/components/showList";
+import PlaceImage from "./scr/asserts/image/Raffaele-Cabras_5-bef.jpg"
 
 export default class App extends Component {
 
@@ -13,7 +14,7 @@ export default class App extends Component {
         if (placeName.trim() === '') {
             return
         }
-        const data= {key: `${Math.random()}`, value: placeName};
+        const data= {key: `${Math.random()}`, name: placeName, image: PlaceImage};
         this.setState({places: [...this.state.places, data]},()=>{console.log(this.state.places)});
     };
 

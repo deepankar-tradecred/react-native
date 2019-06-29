@@ -11,7 +11,8 @@ const  ShowList = (props) =>  {
                 renderItem={(info) => {
                     return <PlaceList
                         key={info.item.key}
-                        place={info.item.value}
+                        place={info.item.name}
+                        image={info.item.image}
                         itemOnPressed={() => props.itemDelete(info.item.key)}/>
                     }
                 }
