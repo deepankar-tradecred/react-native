@@ -1,0 +1,4 @@
+#Tue Jun 18 11:54:22 IST 2019
+base.0=/home/deepankar/Documents/git/react-native/my-app/android/app/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+path.0=classes.dex
